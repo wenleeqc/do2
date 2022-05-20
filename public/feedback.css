@@ -1,0 +1,145 @@
+blockquote:before {
+    content: '\201C';
+}
+
+blockquote:after {
+    content: '\201D';
+}
+
+.recommend,
+.feedback,
+.testimonial {
+    padding: 9vw;
+}
+
+.recommend h1,
+.feedback h1,
+.testimonial h1 {
+    /* font-size: 3vw; */
+    font-size: clamp(1.3rem, 4vw, 3rem);
+    margin-bottom: 4vw;
+}
+
+/* .recommend {
+    height: 50vh;
+} */
+
+.recommend {
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.recommend > div > div {
+    /* background-color: pink; */
+    width: clamp(200px, 80vw, 800px);
+}
+
+.recommend blockquote {
+    font-style: italic;
+    /* font-size: 5vw; */
+    font-size: clamp(1rem, 3vw, 3rem);
+    color: var(--accent-color);
+    margin-bottom: 2vw;
+}
+
+.recommend > div > div > span {
+    /* font-size: 2vw; */
+    font-size: clamp(.8rem, 1.5vw, 1.5rem);
+}
+
+.recommend .lg-style,
+.testimonial .lg-style {
+    font-size: 3.5vw;
+}
+
+.recommend .lg-style > sup,
+.testimonial .lg-style > sup {
+    font-size: 1.5vw;
+}
+
+.feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--bg-alternate);
+}
+
+.feedback h1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.feedback img {
+    /* justify-self: center;
+    align-self: center; */
+    /* width: 35vw; */
+    width: clamp(10rem, 30vw, 40rem);
+    margin-right: 5vw;
+}
+
+.feedback label {
+    display: block;
+    margin-bottom: 1vw;
+    /* font-size: 1.8vw; */
+    font-size: clamp(.8rem, 1.5vw, 1.5rem);
+}
+
+.feedback input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px hwb(0 83% 17%);
+    /* font-size: 1.2vw; */
+    font-size: clamp(.8rem, 1.5vw, 1.5rem);
+    padding: 1vw;
+    margin-bottom: 3vw;
+}
+
+.feedback textarea {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px hwb(0 83% 17%);
+    font-size: 1.2vw;
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+.feedback input[type=submit] {
+    transition: 0.3s ease-in-out;
+}
+
+.feedback input[type=submit]:hover {
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial > div {
+    width: clamp(200px, 80vw, 800px);
+}
+
+.testimonial > div > div {
+    margin-bottom: 3vw;
+}
+
+.testimonial > div > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    /* font-size: 2vw; */
+    font-size: clamp(1rem, 2vw, 2rem);
+    color: var(--accent-color);
+    margin-bottom: 1vw;
+}
+
+.testimonial > div > div > span {
+    /* font-size: 1vw; */
+    font-size: clamp(.7rem, 1vw, 2rem);
+}
