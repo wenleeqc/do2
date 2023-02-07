@@ -10,3 +10,5 @@ A website I designed for a fictional todo app. Overall visual direction designed
 - HTML
 - CSS
 - Javascript
+- Node.js
+- EJS
